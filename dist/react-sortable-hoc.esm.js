@@ -1101,6 +1101,7 @@ function sortableContainer(WrappedComponent) {
                               ),
                             ).then(function(result) {
                               if (result === false) {
+                                _this._awaitingUpdateBeforeSortStart = false;
                                 _exit2 = true;
                               }
                             });
